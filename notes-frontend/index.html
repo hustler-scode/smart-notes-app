@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes App | Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+  <div class="login-container">
+
+    <h1 class="app-title">Notes App</h1>
+
+    <div id="loginForm">
+      <h2>Welcome Back</h2>
+
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+
+      <button id="Login" onclick="login()">Login</button>
+
+      <p class="switch-text">
+        Don't have an account?
+        <span onclick="showRegister()">Create account?</span>
+      </p>
+
+      <p id="message"></p>
+    </div>
+
+    <div id="registerForm" style="display:none;">
+      <h2>Create Account</h2>
+
+      <input type="text" id="regUsername" placeholder="Username">
+      <input type="email" id="regEmail" placeholder="Email">
+      <input type="password" id="regPassword" placeholder="Password">
+
+      <button onclick="register()">Register</button>
+
+      <p class="switch-text">
+        Already have an account?
+        <span onclick="showLogin()">Login</span>
+      </p>
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

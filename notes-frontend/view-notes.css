@@ -1,0 +1,83 @@
+.page-body{
+    margin:0;
+    font-family:Segoe UI;
+    background:#f4f7fb;
+    min-height:100vh;
+}
+
+.page-container{
+    padding:40px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.notes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.note-card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+    position:relative;
+}
+
+.note-card:hover{
+    transform:translateY(-5px);
+}
+
+.note-title{
+    font-weight:bold;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.note-content{
+    color:#555;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.note-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+button{
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:13px;
+}
+
+.complete-btn{
+    background:#4e73df;
+    color:white;
+}
+
+.delete-btn{
+    background:#dc3545;
+    color:white;
+}
+
+.update-btn{
+    background:#ffc107;
+    color:white;
+}
+.back-btn{
+    width:200px;
+    padding:12px;
+    background:#6c757d;
+    color:white;
+    display:block;
+    margin:40px auto;
+}

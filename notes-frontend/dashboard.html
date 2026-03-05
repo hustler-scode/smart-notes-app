@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body class="dashboard-body">
+
+<div class="dashboard-container">
+
+<!-- ===== TOP STATS ===== -->
+<div class="stats-row">
+
+<div class="stat-card">
+<h3 id="totalNotes">0</h3>
+<p>Total Notes</p>
+</div>
+
+<div class="stat-card">
+<h3 id="completedNotes">0</h3>
+<p>Completed</p>
+</div>
+
+<div class="stat-card">
+<h3 id="archivedNotes">0</h3>
+<p>Archived</p>
+</div>
+
+<div class="stat-card">
+<h3 id="overdueNotes">0</h3>
+<p>Overdue</p>
+</div>
+
+</div>
+
+<!-- ===== CENTER ACTION PANEL ===== -->
+
+<div class="action-panel">
+
+<h2>What do you want to do?</h2>
+
+<div class="button-grid">
+
+<button onclick="navigate('create-note.html')">
+Create Note
+</button>
+
+<button onclick="navigate('view-notes.html')">
+View Notes
+</button>
+
+<button onclick="navigate('update-note.html')">
+Update Note
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Note</title>
+<link rel="stylesheet" href="create-note.css">
+</head>
+
+<body class="page-body">
+
+<div class="form-container">
+
+<h2>Create New Note</h2>
+
+<input type="text" id="title" placeholder="Note Title">
+
+<textarea id="content" placeholder="Note Content"></textarea>
+
+<input type="date" id="dueDate" required>
+<button onclick="createNote()">Save Note</button>
+
+<p id="message"></p>
+
+<br>
+
+<button onclick="goDashboard()" class="back-btn">
+Back to Dashboard
+</button>
+
+</div>
+
+<script src="create-note.js"></script>
+</body>
+</html>
