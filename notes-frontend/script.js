@@ -21,7 +21,7 @@ async function login() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
   
-    const res = await fetch("http://localhost:5000/api/auth/login", {
+    const res = await fetch(`${API}/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password })
@@ -33,7 +33,7 @@ async function login() {
       localStorage.setItem("token", data.token);
       window.location.href = "dashboard.html";
     } else {
-      document.getElementById("message").innerText = data.message;
+      document.getElementById("message").innerText = data.message || "Login failed";
     }
   }
 
