@@ -1,4 +1,4 @@
-const API = "https://smart-notes-apis.onrender.com";
+const API = "https://smart-notes-apis.onrender.com/api";
 
 // ================= REGISTER =================
 async function register() {
