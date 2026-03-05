@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api";
+const API = "https://smart-notes-apis.onrender.com";
 
 /* Authentication guard */
 if(!localStorage.getItem("token")){

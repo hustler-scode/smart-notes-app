@@ -2,7 +2,7 @@
 if(!localStorage.getItem("token")){
     window.location.href="index.html";
 }
-const API = "http://localhost:5000/api";
+const API = "https://smart-notes-apis.onrender.com";
 
 function navigate(page){
     window.location.href = page;
