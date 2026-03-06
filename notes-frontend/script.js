@@ -2,9 +2,9 @@ const API = "https://smart-notes-apis.onrender.com/api";
 
 // ================= REGISTER =================
 async function register() {
-  const username = document.getElementById("username").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  const username = document.getElementById("regUsername").value;
+  const email = document.getElementById("regEmail").value;
+  const password = document.getElementById("regPassword").value;
 
   const res = await fetch(`${API}/auth/register`, {
     method: "POST",
