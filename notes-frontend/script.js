@@ -13,7 +13,15 @@ async function register() {
   });
 
   const data = await res.json();
+
   document.getElementById("message").innerText = data.message || data.error;
+
+  // If registration successful → go to login form
+  if (res.ok) {
+    setTimeout(() => {
+      showLogin();
+    }, 1500);
+  }
 }
 
 // ================= LOGIN =================
